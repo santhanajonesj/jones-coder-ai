@@ -12,7 +12,7 @@ with st.sidebar:
     st.caption("API INTEGRATON")
     st.caption("DATA MANAGEMENT USING") 
     st.write("## :orange[Select any question to get Insights]")
-    st.selectbox('Questions',
+    st.textinput('Questions',
     ['Click the question that you would like to query',
     '1. What are the names of all the videos and their corresponding channels?',
     '2. Which channels have the most number of videos, and how many videos do they have?',
