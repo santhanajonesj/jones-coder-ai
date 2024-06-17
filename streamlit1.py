@@ -4,7 +4,6 @@ import pandas as pd
 
 st.title(":red[YOUTUBE CHANNEL COLLECTION]")
 st.write("This can collect channel information by using channel id  and retrieve all the channel details,playlist details,comment details & video details")
-st.set_page_config(layout='wide')
 with st.sidebar:
     st.title(":red[YOUTUBE DATA HARVESTING AND WAREHOUSING]")
     st.header("Skills Take Away")
