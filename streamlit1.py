@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.title(":red[YOUTUBE CHANNEL COLLECTION]")
+st.title("CREATED BY SANTHANA JONES J")
 st.write("This can collect channel information by using channel id  and retrieve all the channel details,playlist details,comment details & video details")
 with st.sidebar:
     st.title(":red[YOUTUBE DATA HARVESTING AND WAREHOUSING]")
