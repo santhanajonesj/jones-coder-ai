@@ -7,12 +7,11 @@ st.write("This can collect channel information by using channel id  and retrieve
 with st.sidebar:
     st.title(":red[YOUTUBE DATA HARVESTING AND WAREHOUSING]")
     st.header("SKILLS TAKE AWAY")
-    st.selectbox(
-    st.caption("PYTHON SCRIPTING"),
-    st.caption("DATA COLLECTION "),
-    st.caption("MySQL"),
-    st.caption("API INTEGRATON"),
-    st.caption("DATA MANAGEMENT USING") )
+    st.caption("PYTHON SCRIPTING")
+    st.caption("DATA COLLECTION ")
+    st.caption("MySQL")
+    st.caption("API INTEGRATON")
+    st.caption("DATA MANAGEMENT USING")
     st.write("## :orange[Select any question to get Insights]")
     st.selectbox('Questions',
     ['Click the question that you would like to query',
