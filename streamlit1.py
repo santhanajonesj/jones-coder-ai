@@ -10,7 +10,21 @@ with st.sidebar:
     st.caption("DATA COLLECTION ")
     st.caption("MySQL")
     st.caption("API INTEGRATON")
-    st.caption("DATA MANAGEMENT USING")                    
+    st.caption("DATA MANAGEMENT USING") 
+    st.write("## :orange[Select any question to get Insights]")
+    st.selectbox('Questions',
+    ['Click the question that you would like to query',
+    '1. What are the names of all the videos and their corresponding channels?',
+    '2. Which channels have the most number of videos, and how many videos do they have?',
+    '3. What are the top 10 most viewed videos and their respective channels?',
+    '4. How many comments were made on each video, and what are their corresponding video names?',
+    '5. Which videos have the highest number of likes, and what are their corresponding channel names?',
+    '6. What is the total number of likes and dislikes for each video, and what are their corresponding video names?',
+    '7. What is the total number of views for each channel, and what are their corresponding channel names?',
+    '8. What are the names of all the channels that have published videos in the year 2022?',
+    '9. What is the average duration of all videos in each channel, and what are their corresponding channel names?',
+    '10. Which videos have the highest number of comments, and what are their corresponding channel names?'])
+    
 
 channel_id_input_placeholder = 'channel_id_input'
 channel_id = st.text_input('Enter your Channel ID', key=channel_id_input_placeholder)
