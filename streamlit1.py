@@ -1,15 +1,5 @@
 import streamlit as st
 import pandas as pd
-from googleapiclient.discovery import build
-
-def get_youtube_api_client():
- api_key= 'AIzaSyB-fo3hqqt32Z5XC1t0zpp0kFElus8xlkY'
- api_service_name = "youtube"
- api_version = "v3"
- youtube = googleapiclient.discovery.build(api_service_name, api_version, developerKey=api_key)
- return youtube
-
-youtube = get_youtube_api_client()
 
 st.title(":red[YOUTUBE CHANNEL COLLECTION]")
 st.write("This can collect channel information by using channel id  and retrieve all the channel details,playlist details,comment details & video details")
@@ -21,7 +11,6 @@ with st.sidebar:
     st.caption("MySQL")
     st.caption("API INTEGRATON")
     st.caption("DATA MANAGEMENT USING")                    
-youtube = get_youtube_api_client()
 
 channel_id_input_placeholder = 'channel_id_input'
 channel_id = st.text_input('Enter your Channel ID', key=channel_id_input_placeholder)
