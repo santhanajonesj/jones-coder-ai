@@ -7,7 +7,7 @@ st.write("This can collect channel information by using channel id  and retrieve
 with st.sidebar:
     st.title(":red[YOUTUBE DATA HARVESTING AND WAREHOUSING]")
     st.header("Skills Take Away")
-    st.bullet("PYTHON SCRIPTING")
+    st.caption("PYTHON SCRIPTING")
     st.caption("DATA COLLECTION ")
     st.caption("MySQL")
     st.caption("API INTEGRATON")
