@@ -8,10 +8,10 @@ with st.sidebar:
     st.title(":red[YOUTUBE DATA HARVESTING AND WAREHOUSING]")
     st.header("SKILLS TAKE AWAY")
     st.selectbox(
-    st.caption("PYTHON SCRIPTING")
-    st.caption("DATA COLLECTION ")
-    st.caption("MySQL")
-    st.caption("API INTEGRATON")
+    st.caption("PYTHON SCRIPTING"),
+    st.caption("DATA COLLECTION "),
+    st.caption("MySQL"),
+    st.caption("API INTEGRATON"),
     st.caption("DATA MANAGEMENT USING") )
     st.write("## :orange[Select any question to get Insights]")
     st.selectbox('Questions',
