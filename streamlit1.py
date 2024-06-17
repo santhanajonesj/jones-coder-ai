@@ -2,17 +2,6 @@ import streamlit as st
 import pandas as pd
 
 
-
-with st.sidebar:
-    selected = option_menu(None, ["Home","Extract and Transform","View"], 
-                           icons=["house-door-fill","tools","card-text"],
-                           default_index=0,
-                           orientation="vertical",
-                           styles={"nav-link": {"font-size": "30px", "text-align": "centre", "margin": "0px", 
-                                                "--hover-color": "#C80101"},
-                                   "icon": {"font-size": "30px"},
-                                   "container" : {"max-width": "6000px"},
-                                   "nav-link-selected": {"background-color": "#C80101"}})
 st.title(":red[YOUTUBE CHANNEL COLLECTION]")
 st.write("This can collect channel information by using channel id  and retrieve all the channel details,playlist details,comment details & video details")
 st.set_page_config(layout='wide')
