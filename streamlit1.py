@@ -27,8 +27,7 @@ if len(channel_id)>0:
         channel_data = get_channel_info(youtube, channel_id)
         
         # VIEW PAGE
-if selected == "View":
-    
+  
     st.write("## :orange[Select any question to get Insights]")
     questions = st.selectbox('Questions',
     ['Click the question that you would like to query',
