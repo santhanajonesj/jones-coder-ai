@@ -1,6 +1,24 @@
 import streamlit as st
 import pandas as pd
 
+def get_channel_info(youtube, channel_id):
+    request = youtube.channels().list(
+        part="snippet,statistics,contentDetails",
+        id=channel_id
+    )
+    response = request.execute()
+    channel_information = []
+    for channel_info in response["items"]:
+        channel_information.append({
+            "Channel_Name": channel_info["snippet"]["title"],
+            "Channel_Id": channel_info["id"],
+            "Subscribers": channel_info["statistics"]["subscriberCount"],
+            "Views": channel_info["statistics"]["viewCount"],
+            "Total_videos": channel_info["statistics"]["videoCount"],
+            "Channel_description": channel_info["snippet"]["description"],
+            "Playlist_Id": channel_info["contentDetails"]["relatedPlaylists"]["uploads"]
+        })
+    return channel_information
 st.title(":red[YOUTUBE CHANNEL COLLECTION]")
 st.title("CREATED BY SANTHANA JONES J")
 st.write("This can collect channel information by using channel id  and retrieve all the channel details,playlist details,comment details & video details")
