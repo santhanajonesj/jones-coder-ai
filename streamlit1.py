@@ -53,7 +53,7 @@ if len(channel_id)>0:
     
     if st.button("Import Youtube Channel Details"):
         # Retrieving data from YouTube API
-        playlist_data =get_playlist_info (youtube, channel_id)
+        playlist_info =get_playlist_info (youtube, channel_id)
         Video_data = get_video_ids(youtube,channel_id)
         comment_data = get_comment_Details(youtube, Video_data)
         video2 = get_Video_Details(youtube,channel_id)
